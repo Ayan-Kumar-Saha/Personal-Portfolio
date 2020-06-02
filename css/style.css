@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap');
+
+:root {
+    --primary-color: #0b0c10;
+    --secondary-color: #1f2833;
+    --alternative-color: #fff; 
+    --text-primary-color: #66fcf1;
+    --text-secondary-color: #45a29e;
+    --max-width: 1280px;
+    --large-heading-font-size: 3rem;
+    --medium-heading-font-size: 1.5rem;
+    --lead-font-size: 1.4rem ;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Utility classes */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.current {
+    color: var(--text-primary-color);
+    border-bottom: 2px solid var(--text-primary-color) !important; 
+}
+
+.text-primary {
+    color: var(--text-primary-color);
+}
+
+.l-heading {
+    font-size: var(--large-heading-font-size);
+}
+
+.lead {
+    font-size: var(--lead-font-size);
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.50rem;
+    font-size: 1.2rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--text-primary-color);
+}
+
+/* Header */
+#header-home {
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#header-home #navbar {
+    display: flex;
+    padding: 2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-home #navbar ul {
+    display: flex;
+}
+
+#header-home #navbar ul li {
+    list-style: none;
+    margin: 0 1.5rem;
+}
+
+#header-home #navbar ul li a {
+    padding: 0.2rem 0;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+#header-home #navbar ul li a:hover {
+    color: var(--text-primary-color);
+    border-bottom: 2px solid var(--text-primary-color);
+}
+
+#header-home #header-content {
+    /* padding-top: 20%; */
+    /* border: 1px solid yellow; */
+    margin-top: -6.4rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#header-home #header-content a {
+    margin-top: 2rem;
+}
